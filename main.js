@@ -1,3 +1,5 @@
+console.log('test');
+
 let player1 = {
 	name: 'SCORPION',
 	hp: 3,
@@ -90,7 +92,7 @@ function createPlayer(classname, player) {
 }
 
 
-// createPlayerFirst('player1', 'SCORPION', 50);
+// createPlayerFirst('playerwww', 'SCORPION', 50);
 // createPlayerFirst('player2', 'SUB-ZERO', 80);
 
 createPlayer('player1', player1);
