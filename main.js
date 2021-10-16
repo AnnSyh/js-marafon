@@ -81,7 +81,6 @@ function changeHP(player) {
     if (player.hp <= $rendom) {
         player.hp = 0;
         $playerPoints.innerText = player.hp; //должна нарисоваться
-        // $arenas.appendChild(playerLose(player.name));
         $loseTitle.style.display = 'block';
 
     } else {
@@ -105,7 +104,7 @@ $randomButton.addEventListener('click', function () {
     const $player2HP =  changeHP(player2);
 
 
-     if (($player1HP == 0) && ($player2HP == 0)) { console.log('Ничья');
+     if (($player1HP == 0) && ($player2HP == 0)) {
         $playerLife1.style.width = 0 + '%';
         $playerLife2.style.width = 0 + '%';
         $randomButton.disabled = true;
@@ -116,13 +115,11 @@ $randomButton.addEventListener('click', function () {
         $character1.style.display = 'none';
         $playerLife1.style.width = 0 + '%';
         $randomButton.disabled = true;
-        // $loseTitle.style.display = 'block';
 
     }else if (($player1HP != 0) && ($player2HP == 0)) {
         $character2.style.display = 'none';
         $playerLife2.style.width = 0 + '%';
         $randomButton.disabled = true;
-        // $loseTitle.style.display = 'block';
     }
 
 
